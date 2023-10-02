@@ -1,7 +1,7 @@
 //your JS code here. If required.
 		function secondHighest(arr) {
 			//Write your code here
-			/*const allEqual = (arr) => arr.every(v => v === arr[0]); 
+			/* 
 			
 			arr.sort();  
 			return arr[arr.length-2];  */
@@ -19,6 +19,7 @@
 					
 			// 	}
 			// }
+			const allEqual = (arr) => arr.every(v => v === arr[0]); 
 			if(arr.length==0 || arr.length==1 || allEqual(arr) == true){
 				return -Infinity;
 			}
