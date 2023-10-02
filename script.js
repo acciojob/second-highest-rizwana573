@@ -2,9 +2,7 @@
 		function secondHighest(arr) {
 			//Write your code here
 			/*const allEqual = (arr) => arr.every(v => v === arr[0]); 
-			if(arr.length==0 || arr.length==1 || allEqual(arr) == true){
-				return -Infinity;
-			}
+			
 			arr.sort();  
 			return arr[arr.length-2];  */
 			// let max = -Infinity;
@@ -21,6 +19,9 @@
 					
 			// 	}
 			// }
+			if(arr.length==0 || arr.length==1 || allEqual(arr) == true){
+				return -Infinity;
+			}
 			const sortedArray = arr.sort((v1, v2)=> v2 - v1);
   return sortedArray[1];
 		}   
@@ -33,4 +34,4 @@
 			}
 			alert(secondHighest(arr));
 		}
-		Main();
+		Main(); 
